@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import "./loader.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  font-size: 16px;
+  background-image: url(./img.png);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem;
+}
+.container {
+  &_title {
+    color: white;
+  }
+  & p {
+    color: white;
+    & span {
+      font-weight: 700;
+      color: white;
+      margin-right: 1rem;
+    }
+  }
+  &_vehicles {
+    display: flex;
+    width: 90vw;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &_vehicle {
+    flex-basis: 32.8%;
+    background: rgb(196, 196, 18);
+    border-radius: 1rem;
+    overflow: hidden;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 1rem rgba(0, 0, 0, 20%);
+    }
+  }
+}
+.vehicles_container {
+  position: absolute;
+  width: 40vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: transparent;
+  border-radius: 1.5rem;
+  font-size: large;
+  align-items: center;
+  padding-top: 1rem;
+  backdrop-filter: blur(10px);
+  margin-bottom: 2rem;
+  
+}
+.vehicle_user-panel {
+  width: 100vh;
+  height: 55px;
+  display: flex;
+  flex-wrap: wrap;
+  & h1 {
+    color:white;
+  }
+}
+.film_container{
+  position: absolute;
+  width: 40vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: transparent;
+  border-radius: 1.5rem;
+  font-size: large;
+  align-items: center;
+  padding-top: 1rem;
+  backdrop-filter: blur(10px);
+  margin-bottom: 2rem;
+
+}

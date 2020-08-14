@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+}
+
+.loader {
+  margin: 60px auto;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-right: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-left: 1.1em solid #ffffff;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
+}
+
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  font-size: 16px;
+  background-image: url(/img.ff8e9d7c.png);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem;
+}
+
+.container_title {
+  color: white;
+}
+.container p {
+  color: white;
+}
+.container p span {
+  font-weight: 700;
+  color: white;
+  margin-right: 1rem;
+}
+.container_vehicles {
+  display: flex;
+  width: 90vw;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.container_vehicle {
+  flex-basis: 32.8%;
+  background: #c4c412;
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.container_vehicle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+
+.vehicles_container {
+  position: absolute;
+  width: 40vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: transparent;
+  border-radius: 1.5rem;
+  font-size: large;
+  align-items: center;
+  padding-top: 1rem;
+  backdrop-filter: blur(10px);
+  margin-bottom: 2rem;
+}
+
+.vehicle_user-panel {
+  width: 100vh;
+  height: 55px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.vehicle_user-panel h1 {
+  color: white;
+}
+
+.film_container {
+  position: absolute;
+  width: 40vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: transparent;
+  border-radius: 1.5rem;
+  font-size: large;
+  align-items: center;
+  padding-top: 1rem;
+  backdrop-filter: blur(10px);
+  margin-bottom: 2rem;
+}
+
+/*# sourceMappingURL=/style.97fcb138.css.map */
